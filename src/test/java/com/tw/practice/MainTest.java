@@ -7,7 +7,7 @@ import org.junit.Test;
 public class MainTest {
     @Test
     public void givenStudentCountWhenMainThenPrintInOrder() {
-        int studentCount = 4;
+        int studentCount = 100;
         Main.print(studentCount);
     }
 
@@ -49,5 +49,10 @@ public class MainTest {
     @Test
     public void givenStudentPositionWhenNotMultiplesOf7ThenPosition() {
         Assert.assertEquals("4", Main.isMultiplesOf3Or5Or7(4));
+    }
+
+    @Test
+    public void givenStudentPositionWhenContains3ThenFizz() {
+        Assert.assertEquals("Fizz", Main.isContains3Or5Or7(35));
     }
 }
