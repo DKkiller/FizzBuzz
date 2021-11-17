@@ -22,13 +22,28 @@ public class MainTest {
     }
 
     @Test
-    public void givenStudentPositionWhenMultiplesOf7ThenBuzz() {
+    public void givenStudentPositionWhenMultiplesOf7ThenWhizz() {
         Assert.assertEquals("Whizz", Main.isMultiplesOf3Or5Or7(7));
     }
 
     @Test
     public void givenStudentPositionWhenMultiplesOf3and5ThenFizzBuzz() {
         Assert.assertEquals("FizzBuzz", Main.isMultiplesOf3Or5Or7(15));
+    }
+
+    @Test
+    public void givenStudentPositionWhenMultiplesOf3and7ThenFizzWhizz() {
+        Assert.assertEquals("FizzWhizz", Main.isMultiplesOf3Or5Or7(21));
+    }
+
+    @Test
+    public void givenStudentPositionWhenMultiplesOf5and7ThenFizzBuzzWhizz() {
+        Assert.assertEquals("FizzBuzzWhizz", Main.isMultiplesOf3Or5Or7(105));
+    }
+
+    @Test
+    public void givenStudentPositionWhenMultiplesOf3and5and7ThenFizzWhizz() {
+        Assert.assertEquals("BuzzWhizz", Main.isMultiplesOf3Or5Or7(35));
     }
 
     @Test
