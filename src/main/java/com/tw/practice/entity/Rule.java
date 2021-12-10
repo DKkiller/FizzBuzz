@@ -32,4 +32,19 @@ public class Rule {
     public String isMultiplesOf105 (Integer count) {
         return count % 105 == 0 ? "FizzBuzzWhizz" : count.toString();
     }
+
+    public String isContains3 (Integer count) {
+        String countString = String.valueOf(count);
+        return countString.contains("3") ? "Fizz" : countString;
+    }
+
+    public String isContains5 (Integer count) {
+        String countString = String.valueOf(count);
+        return countString.contains("5") ? isMultiplesOf35(count) : countString;
+    }
+
+    public String isContains7 (Integer count) {
+        String countString = String.valueOf(count);
+        return countString.contains("7") ? isMultiplesOf21(count) : countString;
+    }
 }
