@@ -17,4 +17,19 @@ public class Rule {
         return count % 7 == 0 ? "Whizz" : count.toString();
     }
 
+    public String isMultiplesOf15 (Integer count) {
+        return count % 15 == 0 ? "FizzBuzz" : count.toString();
+    }
+
+    public String isMultiplesOf21 (Integer count) {
+        return count % 21 == 0 ? "FizzWhizz" : count.toString();
+    }
+
+    public String isMultiplesOf35 (Integer count) {
+        return count % 35 == 0 ? "BuzzWhizz" : count.toString();
+    }
+
+    public String isMultiplesOf105 (Integer count) {
+        return count % 105 == 0 ? "FizzBuzzWhizz" : count.toString();
+    }
 }
