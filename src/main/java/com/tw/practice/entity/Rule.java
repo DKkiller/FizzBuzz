@@ -5,15 +5,15 @@ package com.tw.practice.entity;
  */
 public class Rule {
 
-    private String isMultiplesOf3 (Integer count) {
+    public String isMultiplesOf3 (Integer count) {
         return count % 3 == 0 ? "Fizz" : count.toString();
     }
 
-    private String isMultiplesOf5 (Integer count) {
+    public String isMultiplesOf5 (Integer count) {
         return count % 5 == 0 ? "Buzz" : count.toString();
     }
 
-    private String isMultiplesOf7 (Integer count) {
+    public String isMultiplesOf7 (Integer count) {
         return count % 7 == 0 ? "Whizz" : count.toString();
     }
 
