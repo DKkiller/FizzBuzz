@@ -8,10 +8,10 @@ public class IRuleImplContains7 implements IRule {
 
     @Override
     public String say(String position) {
-        if (match(position)) {
+        if (match(position))
             return "Whizz";
-        } else {
+        else
             return position;
-        }
+
     }
 }
