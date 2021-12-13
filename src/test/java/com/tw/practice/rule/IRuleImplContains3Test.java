@@ -43,7 +43,7 @@ class IRuleImplContains3Test {
     }
 
     @Test
-    public void givenPosition10whenMatchThenReturn10() {
+    public void givenPosition10whenMatchThenReturnPosition() {
         String position = "10";
 
 

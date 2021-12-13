@@ -43,7 +43,7 @@ class IRuleImplContains5Test {
     }
 
     @Test
-    public void givenPosition10whenMatchThenReturnBuzz() {
+    public void givenPosition10whenMatchThenReturnPosition() {
         String position = "10";
 
 
