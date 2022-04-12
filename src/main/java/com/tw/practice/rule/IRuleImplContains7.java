@@ -18,7 +18,7 @@ public class IRuleImplContains7 implements IRule {
     @Override
     public String say(String position) {
         if (ruleMultiples3.match(position) && ruleMultiples7.match(position))
-            return ruleMultiples3.say(position) + ruleMultiples7.say(position);
+            return String.join(ruleMultiples3.say(position), ruleMultiples7.say(position));
         else if (ruleMultiples3.match(position) && ruleMultiples7.match(position))
             return ruleMultiples3.say(position);
         else if (ruleMultiples3.match(position) && ruleMultiples7.match(position))

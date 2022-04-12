@@ -17,13 +17,12 @@ public class IRuleImplContains5 implements IRule {
     @Override
     public String say(String position) {
         if (ruleMultiples5.match(position) && ruleMultiples7.match(position))
-            return ruleMultiples5.say(position) + ruleMultiples7.say(position);
+            return String.join(ruleMultiples5.say(position), ruleMultiples7.say(position));
         else if (ruleMultiples5.match(position) && !ruleMultiples7.match(position))
             return ruleMultiples5.say(position);
         else if (!ruleMultiples5.match(position) && ruleMultiples7.match(position))
             return ruleMultiples7.say(position);
         else
             return position;
-
     }
 }
